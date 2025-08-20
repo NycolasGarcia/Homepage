@@ -1,0 +1,14 @@
+@import url(main.css);
+
+.sktBtn{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 16px; /* Adjust as needed */
+  border: none;
+  border-radius: 4px; /* Optional */
+  background-color: #007bff; /* Your preferred color */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}

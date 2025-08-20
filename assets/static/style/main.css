@@ -1,0 +1,93 @@
+:root{
+/*Cor Base, Alternativa e Fontes para modos Light e Dark*/
+    --colDarkAlt: rgb(30,30,40);
+    --colDarkBas: rgb(20,20,30);
+    --colDarkTxt: rgb(250,250,250);
+    --colDarkInp: rgb(0,0,0);
+    
+    --colDarkStro: rgb(140,70,140);
+    --colDarkItal: rgb(50, 150, 90);
+
+    --colDarkBtA: rgb(70,70,80);
+    --colDarkBtB: rgb(50,50,60);
+    --colDarkBtC: rgb(30,30,40);
+
+    --fontPrimary: "JetBrains Mono", "Fira Code", "Source Code Pro";
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+  font-family: var(--fontPrimary);
+  line-height: 1.6;
+  color: var(--colDarkTxt);
+  background-color: var(--colDarkBas);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--colDarkTxt);
+    justify-content: center;
+    align-items: center;
+}
+
+hr, strong{
+    color: var(--colDarkStro);
+}
+
+em{
+    color: var(--colDarkItal);
+}
+
+input[type=text]{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-bottom: 0.1em solid var(--colDarkStro);
+}
+::placeholder{
+    color: var(--colDarkTxt);
+}
+
+button {
+    border: 0;
+    background: var(--colDarkBtA);
+    color: var(--colDarkTxt);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: var(--colDarkBtB);
+}
+
+button:active {
+    background: var(--colDarkBtC);
+}
+
+.logo, .about, .experience, .mail{
+    background: var(--colDarkBas);
+    text-align: center;
+}
+
+.stack{
+    background-color: var(--colDarkAlt);
+}
+
+section{
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Logo — Nycolas Garcia</title>
+  <!-- Fonte open source com cara de programador -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Ajuste livre das cores principais */
+      --purple: rgb(140,70,140); /* roxo (<> em destaque) */
+      --green:  rgb(50, 150, 90); /* verde (iniciais N e G) */
+      --ink:    rgb(255,255,255); /* cor do restante do texto */
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+
+    body {
+      margin: 0;
+      display: grid;
+      place-content: center;
+      color: var(--ink);
+      font-family: "JetBrains Mono"
+    }
+
+    .logo {
+      line-height: 1.05;
+      letter-spacing: 0.015em;
+      font-weight: 400;
+      display: inline-block;
+      white-space: nowrap;
+      user-select: none;
+    }
+
+    .logo .chev {
+      font-weight: 800;
+      color: var(--purple);
+    }
+
+    .logo .initial {
+      font-weight: 800;
+      color: var(--green);
+    }
+
+    .logo .slash { /* a barra da segunda linha */
+      display: inline-block;
+      transform: translateX(0.02em);
+    }
+
+    @media (max-width: 380px) {
+      .logo { font-size: clamp(28px, 12vw, 64px); }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="logo" aria-label="Nycolas Garcia">
+    <span class="chev">&lt;</span><span class="first"><span class="initial">N</span>ycolas</span><br>
+    <span class="chev slash">/</span><span class="last"><span class="initial">G</span>arcia</span><span class="chev">&gt;</span>
+  </h1>
+</body>
+</html>
