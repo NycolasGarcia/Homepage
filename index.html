@@ -1,51 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="ptBr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nycolas Garcia - Dev</title>
         <link rel="stylesheet" href="assets/static/style/main.css">
         <link rel="stylesheet" href="assets/static/style/layout.css">
-        <link rel="stylesheet" href="assets/static/style/element.css">
+        <title>Nycolas Garcia Dev</title>
     </head>
     <body>
         <header>
-            <a>Início</a> <a href="portifolio.html">Projetos</a> <a href="Blog">Blog</a>
-            <button>Pt-BR</button>
-            <button>Light</button>
-            <button>Meu CV</button>
+            <a href="#">Inicio</a> 
+            <a href="portifolio.html">Portifólio</a> 
+            <a href="Blog">Blog</a>
+            <a href>Tema</a>
+            <a href>Pt</a>
         </header>
+        <main>
+            <figure>
+                <p><strong>Desenvolvedor Full Stack</strong>, aplicando o melhor que a <em>Engenharia de Software</em> tem a oferecer em soluções reais.</p>    
+                <iframe src="assets/templates/Logo.html" style="display: block; border: none;"></iframe>
+            </figure>
 
-        <section>
-            <div class="logo">
-                <div class="motto">
-                    <strong>Desenvolvedor Full Stack</strong>, aplicando o melhor que a <em>Engenharia de Software</em> tem a oferecer em soluções reais.
-                    <br><small>Implementações arquitetadas de forma <em>prática e funcional.</em></small>
-                </div>
-                <div class="logoImg">
-                    <iframe src="assets/templates/Logo.html"
-                    frameborder="0"></iframe>
-                </div>
-            </div>
-        </section>
+            <h2><strong>Sobre</strong> <em>Mim</em></h2>
+            <section>
 
-        <section>
-            <div class="about">
-                <h3 class="aboutTitle">Sobre Mim</h3>
-                <div class="aboutMe">
-                    <h4>Nycolas Allan Gabriel Rivero Garcia</h4>
-                </div>
-                
-                <div class="aboutDescription">
-                    <p>Full Stack | Data Science | Indie GameDev</p>
-                    <p>Graduando em Ciências da Computação pela USJT <em>(Universidade São Judas Tadeu)</em>, desenvolvi aplicações internas de natureza logistica, financeira e analítica, com foco em escalabilidade, eficiencia e  acima de tudo, solucionar problemas reais, apoio ativamente a comunidade open source e no tempo livre crio jogos indie.</p>
-                </div>
+                <h4>Nycolas Allan Gabriel Rivero Garcia</h4>
+                <p>Full Stack | Data Science | Indie GameDev</p>
+                <p>Graduando em Ciências da Computação pela USJT <em>(Universidade São Judas Tadeu)</em>, desenvolvi aplicações internas de natureza logistica, financeira e analítica, com foco em escalabilidade, eficiencia e  acima de tudo, solucionar problemas reais, apoio ativamente a comunidade open source e no tempo livre crio jogos indie.</p>
 
                 <div class="aboutProfilePic">
-                    <img src="assets/imgs/profile.jpeg">
+                    <img src="assets/imgs/profile.jpeg" style="transform: none !important;" alt="Foto de Perfil">
                 </div>
                 
-                <div class="aboutContact">
+                <div>
                 <p>Contato:</p>
                     <a href="https://bsky.app/profile/nycolasagrg.bsky.social" target="_blank">
                         <img src="https://go-skill-icons.vercel.app/api/icons?i=bluesky&theme=" alt="BlueSky">
@@ -60,266 +47,289 @@
                         <img src="https://go-skill-icons.vercel.app/api/icons?i=gmail&theme=" alt="Gmail">
                     </a>
                 </div>
-            </div>
-        </section>
+            </section>
 
+            <h2><strong>Experiência</strong> <em>Profissional</em></h2>
+            <section class="expSection">
+                <div class="expMenu">
+                    <button class="expBtn active" data-target="intData">Estagiário Dados</button>
+                    <button class="expBtn" data-target="intIT">Estagiário de TI</button>
+                </div>
 
-        <section>
-            <div class="experience">
-                <h3>Experiências</h3>
-                <div class="tabExp">
-                    <div class="expMenu">
-                        <button class="expBtn active" id="intData">Estagiário Dados</button>
-                        <button class="expBtn" id="intIT">Estagiário de TI</button>
+                <div class="expCont">
+                    <h4>Selecione uma experiência para ver mais detalhes.</h4>
+                    <hr>
+                    <div class="expPane active" id="defaultExp">
+                        <p>Atuei como <strong>Estagiário</strong> por <em>6 meses</em>, totalizando <em>630 horas</em>, desenvolvendo aplicações de uso interno em áreas <strong>logística, financeira e analítica</strong>.</p>
+                        <hr>
                     </div>
+                    <div class="expPane" id="intData">
+                        <h4>Estágio em Análise de Dados | Zen Noh Grain Brasil Holding LTDA (Jan/2025 - Mai/2025)</h4>
+                        <p>Atuei como <strong>Analista de Dados</strong>, desenvolvendo soluções de automação e análise que reduziram atividades manuais e aprimoraram a tomada de decisão. Principais projetos:</p>
+                        <ul>
+                            <li>
+                                <strong>Aplicação Web Analítica de Dados Climáticos</strong>: Desenvolvi uma aplicação <em>Python</em> para <em>ETL</em> de dados meteorológicos, integrados em um <em>Banco de Dados SQL</em> e visualizados na Web com <em> Flask, Pandas e Plotly</em> permitindo correlacionar condições climáticas com a qualidade das safras.
+                            </li>
+                            <li>
+                                <strong>Aplicação Web de Previsão de Embarques</strong>: Usando <em>Python</em>, estruturei um script para ingestão de dados navais em tempo quase real, atualizando status de embarques, estimativas de chegada e saída de cargas, e exibi em uma aplicação Web um Dashboard interativo.
+                            </li>
+                            <li>
+                                <strong>Aplicação Web de P&amp;L</strong>: Implementei sistema em Flask para registro, cálculo e atualização automatizados de lucros e perdas no mercado futuro, baseado em multiplos ativos, incluindo geração de relatórios customizados em PDF e Excel e um Dashboard Interativo.
+                            </li>
+                            <li>
+                                <strong>Aplicação Mobile de Visita Tecnica</strong>: Desenvolvi uma aplicação Mobile em Python que tinha como objetivo coletar dados de nossa equipe de análise de qualidade para multiplos ativos usando formulários e a exibição em um dashboard interativo, 
+                            </li>
+                        </ul>
 
-                    <div class="expCont">
-                        <div class="expPane active" id="intData">
-                            <h4>Estágio em Análise de Dados | Zen Noh Grain Brasil Holding LTDA (Jan/2025 - Mai/2025)</h4>
-                            <p>Atuei como <strong>Analista de Dados</strong>, desenvolvendo soluções de automação e análise que reduziram atividades manuais e aprimoraram a tomada de decisão. Principais projetos:</p>
+                        <p><strong>Resultados:</strong> Automatização de rotinas diárias, padronização de metodologias de conversão de ativos e definição de métricas objetivas para suporte às decisões estratégicas. As soluções foram projetadas com princípios de engenharia de software, assegurando robustez, escalabilidade e documentação adequada.</p>
+                        <hr>
+                    </div>
+                    <div class="expPane" id="intIT">
+                        <h4>Estágio em Tecnologia da Informação | Cabell Produtos para Salão LTDA (Ago/2024 - Out/2024)</h4>
+                        <p>Atuei como <strong>Suporte Técnico</strong>, prestando manutenção preventiva e corretiva em infraestrutura de TI, apoiando usuários e desenvolvendo soluções para otimização de processos internos, além de participar na maior feira da Indústria Cosmética na América Latina . Principais atividades:</p>
 
-                            <ul>
-                                <li>
-                                    <strong>Aplicação Web Analítica de Dados Climáticos</strong>: Desenvolvi uma aplicação <em>Python</em> para <em>ETL</em> de dados meteorológicos, integrados em um <em>Banco de Dados SQL</em> e visualizados na Web com <em> Flask, Pandas e Plotly</em> permitindo correlacionar condições climáticas com a qualidade das safras.
-                                </li>
-                                <li>
-                                    <strong>Aplicação Web de Previsão de Embarques</strong>: Usando <em>Python</em>, estruturei um script para ingestão de dados navais em tempo quase real, atualizando status de embarques, estimativas de chegada e saída de cargas, e exibi em uma aplicação Web um Dashboard interativo.
-                                </li>
-                                <li>
-                                    <strong>Aplicação Web de P&amp;L</strong>: Implementei sistema em Flask para registro, cálculo e atualização automatizados de lucros e perdas no mercado futuro, baseado em multiplos ativos, incluindo geração de relatórios customizados em PDF e Excel e um Dashboard Interativo.
-                                </li>
-                                <li>
-                                    <strong>Aplicação Mobile de Visita Tecnica</strong>: Desenvolvi uma aplicação Mobile em Python que tinha como objetivo coletar dados de nossa equipe de análise de qualidade para multiplos ativos usando formulários e a exibição em um dashboard interativo, 
-                                </li>
-                            </ul>
+                        <ul>
+                            <li>
+                                <strong>Manutenção de Hardware</strong>: Reparo e substituição de peças, limpeza preventiva e documentação das intervenções, criando histórico de manutenção e padronização de equipamentos na companhia.
+                            </li>
+                            <li>
+                                <strong>Suporte ao Usuário</strong>: Elaborei manuais, ministrei treinamentos e implantei um sistema simples de tickets para atendimento, garantindo maior agilidade e rastreabilidade no suporte a colaboradores.
+                            </li>
+                            <li>
+                                <strong>Desenvolvimento de Sistema de Logística</strong>: Identifiquei gargalos entre as equipes Comercial, Logística e Expedição e desenvolvi uma aplicação de controle de estoque, busca e mapeamento em tempo real, integrada ao sistema de vendas já existente.
+                            </li>
+                            <li>
+                                <strong>Infraestrutura de Rede</strong>: Participei da atualização da rede corporativa, incluindo troca de provedor, instalação de pontos de conexão e ajustes em servidor Windows Server, além da criação de um relatório documentado do novo layout de rede.
+                            </li>
+                        </ul>
 
-                            <p><strong>Resultados:</strong> Automatização de rotinas diárias, padronização de metodologias de conversão de ativos e definição de métricas objetivas para suporte às decisões estratégicas. As soluções foram projetadas com princípios de engenharia de software, assegurando robustez, escalabilidade e documentação adequada.</p>
-                            <hr>
-                        </div>
-                        <div class="expPane" id="intIT">
-                            <h4>Estágio em Tecnologia da Informação | Cabell Produtos para Salão LTDA (Ago/2024 - Out/2024)</h4>
-                            <p>Atuei como <strong>Suporte Técnico</strong>, prestando manutenção preventiva e corretiva em infraestrutura de TI, apoiando usuários e desenvolvendo soluções para otimização de processos internos, além de participar na maior feira da Indústria Cosmética na América Latina . Principais atividades:</p>
-
-                            <ul>
-                                <li>
-                                    <strong>Manutenção de Hardware</strong>: Reparo e substituição de peças, limpeza preventiva e documentação das intervenções, criando histórico de manutenção e padronização de equipamentos na companhia.
-                                </li>
-                                <li>
-                                    <strong>Suporte ao Usuário</strong>: Elaborei manuais, ministrei treinamentos e implantei um sistema simples de tickets para atendimento, garantindo maior agilidade e rastreabilidade no suporte a colaboradores.
-                                </li>
-                                <li>
-                                    <strong>Desenvolvimento de Sistema de Logística</strong>: Identifiquei gargalos entre as equipes Comercial, Logística e Expedição e desenvolvi uma aplicação de controle de estoque, busca e mapeamento em tempo real, integrada ao sistema de vendas já existente.
-                                </li>
-                                <li>
-                                    <strong>Infraestrutura de Rede</strong>: Participei da atualização da rede corporativa, incluindo troca de provedor, instalação de pontos de conexão e ajustes em servidor Windows Server, além da criação de um relatório documentado do novo layout de rede.
-                                </li>
-                            </ul>
-
-                            <p><strong>Resultados:</strong> Aumento da vida útil do parque de máquinas por meio de reaproveitamento de hardware, maior eficiência no atendimento aos usuários e integração entre setores críticos via sistema de logística, resultando em maior fluidez operacional durante o período de estágio.</p>
-                            <hr>
-                        </div>
+                        <p><strong>Resultados:</strong> Aumento da vida útil do parque de máquinas por meio de reaproveitamento de hardware, maior eficiência no atendimento aos usuários e integração entre setores críticos via sistema de logística, resultando em maior fluidez operacional durante o período de estágio.</p>
+                        <hr>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <div class="stack">
-                <div class="tabStk">
-                    <h3>Minha</h3></he>
-                    <div class="stkMenu">
-                        <div>
-                            <button class="StkBtn" id="stkWeb">Desenvolvimento Web</button>
-                        </div>
-                        <div>
-                            <button class="StkBtn" id="stkData">Análise de Dados e Inteligência Artificial</button>
-                        </div>
-                        <div>
-                            <button class="StkBtn" id="stkBD">Bancos de Dados</button>
-                        </div>
-                        <div>
-                            <button class="StkBtn" id="stkQua">Testes e Qualidade</button>
-                        </div>
-                        <div>
-                            <button class="StkBtn" id="stkDep">Deploy, DevOps, Implementação, Infraestrutura</button>
-                        </div>
-                        <div>
-                            <button class="StkBtn" id="stkDoc">Documentação, Design e Prototipação</button>
-                            </div>
-                        <div>
-                            <button class="StkBtn" id="stkGame">Desenvolvimento de Jogos Independentes</button>
-                        </div>
+            <h2><strong>Minha</strong> <em>Stack</em></h2>
+            <section>
+                <p>Meu conjunto de Ferramentas é baseado em Python, com foco em desenvolvimento Web e Análise de Dados. </p>
+                <p>As principais tecnologias que utilizo incluem:</p><br>
+                
+                <a href="https://www.python.org/" target="_blank">
+                    <img src="https://go-skill-icons.vercel.app/api/icons?i=python&theme=" alt="Python">
+                </a>
+                <br>
+                <img src="https://go-skill-icons.vercel.app/api/icons?i=html&theme=">
+                <img src="https://go-skill-icons.vercel.app/api/icons?i=css&theme=">
+                <img src="https://go-skill-icons.vercel.app/api/icons?i=js&theme=">
 
-                    </div>
-                    <div class="stkCont">
-                        <div>
-                            <a href="https://www.python.org/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=python&theme=" alt="Python">
-                            </a>
-                            <br>
-                            <img src="https://go-skill-icons.vercel.app/api/icons?i=html&theme=">
-                            <img src="https://go-skill-icons.vercel.app/api/icons?i=css&theme=">
-                            <img src="https://go-skill-icons.vercel.app/api/icons?i=js&theme=">
-                        </div>
-                        <div class="stkPane" id="sktWeb">
+                <br>
+                <p>A escolha dessa Stack se deve a um ecosistema maduro de ferramentas de Código Aberto que encompassam todas as minhas esferas de habilidade</p>
 
-                            <a href="https://www.djangoproject.com/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=django&theme=" alt="Django">
-                            </a>
-                            
-                            <a href="https://flask.palletsprojects.com/en/stable/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=flask&theme=" alt="Flask">
-                            </a>
+                <div class="stkMenu">
+                    <button class="StkBtn" data-target="stkWeb">Desenvolvimento Web ^</button>
+                    <div class="stkPane" id="stkWeb">
 
-                            <br>
-                            
-                            <a href="https://htmx.org/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=htmx&theme=" alt="HTMX">
-                            </a>
-                            <a href="https://getbootstrap.com/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=bootstrap&theme=" alt="">
-                            </a>
-                        </div>
-                        <div class="stkPane" id="sktData">
-                            <a href="https://numpy.org/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=numpy&theme=" alt="Numpy">
-                            </a>
+                        <a href="https://www.djangoproject.com/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=django&theme=" alt="Django" data-target="django">
+                        </a>
+                        
+                        <a href="https://flask.palletsprojects.com/en/stable/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=flask&theme=" alt="Flask" data-target="flask">
+                        </a>
 
-                            <a href="https://pandas.pydata.org/about/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=pandas&theme=" alt="Pandas">
-                            </a>
-                            <a href="https://plotly.com/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=plotly&theme=" alt="Plotly">
-                            </a>
-
-                            <br>
-
-                            <a href="https://www.tensorflow.org" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=tensorflow&theme=" alt="TensorFlow">
-                            </a>
-
-                            <a href="https://scikit-learn.org/stable/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=scikitlearn&theme=" alt="SciKitLearn">
-                            </a>
-                            
-                            <a href="https://opencv.org/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=opencv&theme=" alt="OpenCV">
-                            </a>
-
-                        </div>
-                        <div class="stkPane" id="sktBD">
-                            <a href="https://www.sqlalchemy.org/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=sqlalchemy&theme=" alt="SQLAlchemy">
-                            </a>
-
-                            <br>
-                            
-                            <a href="https://sqlite.org/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=sqlite&theme=" alt="SQLite">
-                            </a>
-
-                            <a href="https://www.postgresql.org/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=postgresql&theme=" alt="PostgreSQL">
-                            </a>
-                            
-                            <a href="https://www.mysql.com/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=mysql&theme=" alt="MySQL">
-                            </a>
-                        </div>
-                        <div class="stkPane" id="sktQua">
-                            <a href="https://docs.pytest.org/en/stable/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=pytest&theme=" alt="Pytest">
-                            </a>
-                            <a href="https://www.selenium.dev/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=selenium&theme=" alt="Selenium">
-                            </a>
-                        </div>
-                        <div class="stkPane" id="sktDep">
-                            <a href="https://www.docker.com/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=docker&theme=" alt="Docker">
-                            </a>
-
-                            <br>
-
-                            <a href="https://git-scm.com/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=git&theme=" alt="Git">
-                            </a>
-
-                            <a href="https://github.com" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=github&theme=" alt="GitHub">
-                            </a>
-
-                            <a href="https://vercel.com/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=vercel&theme=" alt="Vercel">
-                            </a>
-
-                            <br>
-
-                            <a href="" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=windows&theme=" alt="">
-                            </a>
-
-                            <a href="" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=linux&theme" alt="">
-                            </a>
-
-                            <a href="" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=ubuntu&theme=" alt="">
-                            </a>
-
-                        </div>
-                        <div class="stkPane" id="sktDoc">
-                            <img src="https://go-skill-icons.vercel.app/api/icons?i=uml&theme=" alt="UML">
-
-                            <a href="https://www.lucidchart.com/pages/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=lucidchart&theme=" alt="lucidchart">
-                            </a>
-                            <br>
-                            <a href="https://www.figma,com/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=figma&theme=" alt="Figma">
-                            </a>
-
-                            <a href="https://inkscape.org/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=inkscape&theme=" alt="InkScape">
-                            </a>
-
-                            <br>
-
-                            <a href="https://www.gimp.org/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=gimp&theme=" alt="Gimp">
-                            </a>
-
-                            <a href="https://www.blender.org/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=blender&theme=" alt="Blender">
-                            </a>  
-                        </div>
+                        <br>
+                        
+                        <a href="https://htmx.org/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=htmx&theme=" alt="HTMX" data-target="htmx">
+                        </a>
+                        <a href="https://getbootstrap.com/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=bootstrap&theme=" alt="Bootstrap" data-target="bootstrap">
+                        </a>
                     </div>
 
-                        </div>
-                        <div class="stkPane" id="sktGame">
-                            <a href="https://www.godotengine.org/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=godot&theme=" alt="Godot">
-                            </a>  
-                            <a href="https://www.pygame.org/" target="_blank">
-                                <img src="https://go-skill-icons.vercel.app/api/icons?i=pygame&theme=" alt="PyGame">
-                            </a>  
+                        <p class="stkCont" id="django">O Django é um framework web de alto nível que estimula o desenvolvimento rápido e limpo.</p>
 
-                        </div>
+                        <p class="stkCont" id="flask">O Flask é um microframework para Python baseado em Werkzeug e Jinja2.</p>
+
+                        <p class="stkCont" id="htmx">HTMX é uma biblioteca que permite que você use HTML para criar aplicativos dinâmicos.</p>
+
+                        <p class="stkCont" id="bootstrap">Bootstrap é um framework front-end para desenvolvimento de sites responsivos e móveis.</p>
+
+                    <button class="StkBtn" data-target="stkData">Análise de Dados e Inteligência Artificial ^</button>
+                    <div class="stkPane" id="stkData">
+                        <a href="https://numpy.org/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=numpy&theme=" alt="Numpy" data-target="numpy">
+                        </a>
+
+                        <a href="https://pandas.pydata.org/about/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=pandas&theme=" alt="Pandas" data-target="pandas">
+                        </a>
+                        <a href="https://plotly.com/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=plotly&theme=" alt="Plotly" data-target="plotly">
+                        </a>
+
+                        <br>
+
+                        <a href="https://www.tensorflow.org" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=tensorflow&theme=" alt="TensorFlow" data-target="tensorflow">
+                        </a>
+
+                        <a href="https://scikit-learn.org/stable/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=scikitlearn&theme=" alt="SciKitLearn" data-target="scikitlearn">
+                        </a>
+                        
+                        <a href="https://opencv.org/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=opencv&theme=" alt="OpenCV" data-target="opencv">
+                        </a>
+
                     </div>
+
+                    <p class="stkCont" id="numpy">NumPy é uma biblioteca fundamental para computação científica em Python.</p>
+                    <p class="stkCont" id="pandas">Pandas é uma biblioteca de software escrita para a linguagem de programação Python para manipulação e análise de dados.</p>
+                    <p class="stkCont" id="plotly">Plotly é uma biblioteca gráfica interativa que torna simples criar gráficos complexos.</p>
+                    
+                    <p class="stkCont" id="tensorflow">TensorFlow é uma biblioteca de código aberto para aprendizado de máquina.</p>
+                    <p class="stkCont" id="scikitlearn">Scikit-learn é uma biblioteca para aprendizado de máquina em Python.</p>
+                    <p class="stkCont" id="opencv">OpenCV é uma biblioteca de visão computacional e aprendizado de máquina.</p>
+
+                    <button class="StkBtn" data-target="stkBD">Bancos de Dados ^</button>
+                    <div class="stkPane" id="stkBD">
+                        <a href="https://www.sqlalchemy.org/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=sqlalchemy&theme=" alt="SQLAlchemy" data-target="sqlalchemy">
+                        </a>
+
+                        <br>
+                        
+                        <a href="https://sqlite.org/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=sqlite&theme=" alt="SQLite" data-target="sqlite">
+                        </a>
+
+                        <a href="https://www.postgresql.org/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=postgresql&theme=" alt="PostgreSQL" data-target="postgresql">
+                        </a>
+                        
+                        <a href="https://www.mysql.com/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=mysql&theme=" alt="MySQL" data-target="mysql">
+                        </a>
+                    </div>
+
+                    <p class="stkCont" id="sqlalchemy">SQLAlchemy é um kit de ferramentas SQL e ORM para Python.</p>
+
+                    <p class="stkCont" id="sqlite">SQLite é um banco de dados relacional leve e autônomo.</p>
+                    <p class="stkCont" id="postgresql">PostgreSQL é um sistema de gerenciamento de banco de dados objeto-relacional.</p>
+                    <p class="stkCont" id="mysql">MySQL é um sistema de gerenciamento de banco de dados relacional.</p>
+
+                    <button class="StkBtn" data-target="stkQua">Testes e Qualidade ^</button>
+                    <div class="stkPane" id="stkQua">
+                        <a href="https://docs.pytest.org/en/stable/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=pytest&theme=" alt="Pytest" data-target="pytest">
+                        </a>
+                        <a href="https://www.selenium.dev/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=selenium&theme=" alt="Selenium" data-target="selenium">
+                        </a>
+                    </div>
+
+                    <p class="stkCont" id="pytest">Pytest é um framework de testes para Python.</p>
+                    <p class="stkCont" id="selenium">Selenium é uma ferramenta para automação de testes de aplicações web.</p>
+
+                    <button class="StkBtn" data-target="stkDep">Deploy, DevOps, Implementação, Infraestrutura ^</button>
+                    <div class="stkPane" id="stkDep">
+                        <a href="https://www.docker.com/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=docker&theme=" alt="Docker" data-target="docker">
+                        </a>
+
+                        <br>
+
+                        <a href="https://git-scm.com/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=git&theme=" alt="Git" data-target="git">
+                        </a>
+
+                        <a href="https://github.com" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=github&theme=" alt="GitHub" data-target="github">
+                        </a>
+
+                        <a href="https://vercel.com/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=vercel&theme=" alt="Vercel" data-target="vercel">
+                        </a>
+
+                        <br>
+
+                        <a href="https://www.microsoft.com/pt-br/windows-server" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=windows&theme=" alt="Windows" data-target="windows">
+                        </a>
+
+                        <a href="https://ubuntu.com/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=ubuntu&theme=" alt="Ubuntu" data-target="ubuntu">
+                        </a>
+
+                    </div>
+
+                    <p class="stkCont" id="docker">Docker é uma plataforma para desenvolver, enviar e executar aplicações em contêineres.</p>
+
+                    <p class="stkCont" id="git">Git é um sistema de controle de versão distribuído.</p>
+                    <p class="stkCont" id="github">GitHub é uma plataforma de hospedagem de código-fonte e controle de versão usando o Git.</p>
+                    <p class="stkCont" id="vercel">Vercel é uma plataforma para implantar aplicativos front-end.</p>
+
+                    <p class="stkCont" id="windows">Windows Server é um sistema operacional de servidor desenvolvido pela Microsoft.</p>
+                    <p class="stkCont" id="ubuntu">Ubuntu é uma distribuição Linux baseada em Debian.</p>
+
+                    <button class="StkBtn" data-target="stkDoc">Documentação, Design e Prototipação ^</button>
+                    <div class="stkPane" id="stkDoc">
+                        <img src="https://go-skill-icons.vercel.app/api/icons?i=uml&theme=" alt="UML">
+
+                        <a href="https://www.lucidchart.com/pages/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=lucidchart&theme=" alt="lucidchart" data-target="lucidchart">
+                        </a>
+                        <br>
+                        <a href="https://www.figma.com/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=figma&theme=" alt="Figma" data-target="figma">
+                        </a>
+
+                        <a href="https://inkscape.org/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=inkscape&theme=" alt="InkScape" data-target="inkscape">
+                        </a>
+
+                        <br>
+
+                        <a href="https://www.gimp.org/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=gimp&theme=" alt="Gimp" data-target="gimp">
+                        </a>
+
+                        <a href="https://www.blender.org/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=blender&theme=" alt="Blender" data-target="blender">
+                        </a>  
+                    </div>
+
+                    <p class="stkCont" id="uml">UML (Unified Modeling Language) é uma linguagem de modelagem visual para especificar, visualizar, desenvolver e documentar artefatos de software.</p>
+                    <p class="stkCont" id="lucidchart">Lucidchart é uma ferramenta de diagramação baseada na web.</p>
+
+                    <p class="stkCont" id="figma">Figma é uma ferramenta de design colaborativo baseada na web.</p> 
+                    <p class="stkCont" id="inkscape">Inkscape é um editor de gráficos vetoriais de código aberto.</p>
+
+                    <p class="stkCont" id="gimp">GIMP é um editor de imagens de código aberto.</p>
+                    <p class="stkCont" id="blender">Blender é uma suíte de criação 3D de código aberto.</p>
+
+                    <button class="StkBtn" data-target="stkGame">Desenvolvimento de Jogos Independentes ^</button>
+                    <div class="stkPane" id="stkGame">
+                        <a href="https://www.godotengine.org/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=godot&theme=" alt="Godot" data-target="godot">
+                        </a>  
+                        <a href="https://www.pygame.org/" target="_blank">
+                            <img src="https://go-skill-icons.vercel.app/api/icons?i=pygame&theme=" alt="PyGame" data-target="pygame">
+                        </a>  
+
+                    </div>
+
+                    <p class="stkCont" id="godot">Godot é um motor de jogo de código aberto para criar jogos 2D e 3D.</p>
+                    <p class="stkCont" id="pygame">Pygame é uma biblioteca de
+
                 </div>
-            </div>
-        </section>
-
-        <div class="mail">
-            <h3>Contato</h3>
-            <hr>
-            <input type="text" placeholder="nome@email.com">
-            <br>
-            <input type="text" placeholder="Envie sua Mensagem Aqui!">
-        </div>
-
-        <div>
-            Todos os Direitos Reservados - Nycolas Garcia 2025</div>
-        <script src="assets/static/script/script.js"></script>
+            </section>
+        </main>
+        <footer>
+            <p>Todos os direitos reservados. Nycolas Garcia 2025</p>
+            <address></address>
+        </footer>
+        <script src="assets/static/script/main.js"></script>
     </body>
 </html>

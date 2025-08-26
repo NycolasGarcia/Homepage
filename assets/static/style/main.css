@@ -1,93 +1,200 @@
-:root{
-/*Cor Base, Alternativa e Fontes para modos Light e Dark*/
-    --colDarkAlt: rgb(30,30,40);
-    --colDarkBas: rgb(20,20,30);
-    --colDarkTxt: rgb(250,250,250);
-    --colDarkInp: rgb(0,0,0);
-    
-    --colDarkStro: rgb(140,70,140);
-    --colDarkItal: rgb(50, 150, 90);
-
-    --colDarkBtA: rgb(70,70,80);
-    --colDarkBtB: rgb(50,50,60);
-    --colDarkBtC: rgb(30,30,40);
-
-    --fontPrimary: "JetBrains Mono", "Fira Code", "Source Code Pro";
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root
+{
     scroll-behavior: smooth;
-    justify-content: center;
-    align-items: center;
+    --fontFamily: "JetBrains Mono", "Fira Code", "Source Code Pro";
+    --fontSize: 1em;
+    
+    --colBgA: rgb(30,30,40);
+    --colBgB: rgb(20,20,30);
+
+    --colTxt: rgb(250,250,250);
+    --colStr: rgb(140,70,140);
+    --colIta: rgb(50, 150, 90);
+    
+    --colUrl: rgb(255,215,0);
+    --colUrlH: rgb(192,162,0);
+
+    --colInp: rgb(0,0,0);
+    --colInpH: rgb(80,80,80);
+
+    --colBtn: rgb(70,70,80);
+    --colBtnH: rgb(50,50,60);
+    --colBtnA: rgb(30,30,40);
+
 }
 
-body {
-  font-family: var(--fontPrimary);
-  line-height: 1.6;
-  color: var(--colDarkTxt);
-  background-color: var(--colDarkBas);
+.dark{
+    --colBgA: rgb(30,30,40);
+    --colBgB: rgb(20,20,30);
+
+    --colTxt: rgb(250,250,250);
+    --colStr: rgb(140,70,140);
+    --colIta: rgb(50, 150, 90);
+    
+    --colUrl: rgb(255,215,0);
+    --colUrlH: rgb(192,162,0);
+
+    --colInp: rgb(0,0,0);
+    --colInpH: rgb(80,80,80);
+
+    --colBtn: rgb(70,70,80);
+    --colBtnH: rgb(50,50,60);
+    --colBtnA: rgb(30,30,40);
+}
+.light {
+  --colBgA: rgb(250,220,220); 
+  --colBgB: rgb(240,225,220); 
+  
+  --colTxt: rgb(40,30,20);
+  --colStr: rgb(200,90,60);
+  --colIta: rgb(180,70,120);
+
+  --colUrl: rgb(200,140,0);
+  --colUrlH: rgb(150,100,0);
+
+  --colInp: rgb(255,250,245);
+  --colInpH: rgb(230,210,200);
+
+  --colBtn: rgb(220,180,160);
+  --colBtnH: rgb(200,160,140);
+  --colBtnA: rgb(180,140,120);
 }
 
-
-h1, h2, h3, h4, h5, h6 {
-    color: var(--colDarkTxt);
-    justify-content: center;
-    align-items: center;
+header{
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    padding-right: 5%;
+    padding: 1% 5% 1% 0%;
+    background-color: var(--colBgB);
+    gap: 10vw;
 }
 
-hr, strong{
-    color: var(--colDarkStro);
-}
-
-em{
-    color: var(--colDarkItal);
-}
-
-input[type=text]{
+body, main {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
-    background: transparent;
-    border: none;
-    border-bottom: 0.1em solid var(--colDarkStro);
-}
-::placeholder{
-    color: var(--colDarkTxt);
-}
-
-button {
-    border: 0;
-    background: var(--colDarkBtA);
-    color: var(--colDarkTxt);
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    transition: background 0.2s ease;
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+    background-color: var(--colBgA);
+    color: var(--colTxt);
+    align-items: center;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
-button:hover {
-    background: var(--colDarkBtB);
+figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 80%;
+    padding: 4% 10%;
+    padding-left: 10%;
 }
 
-button:active {
-    background: var(--colDarkBtC);
-}
-
-.logo, .about, .experience, .mail{
-    background: var(--colDarkBas);
-    text-align: center;
-}
-
-.stack{
-    background-color: var(--colDarkAlt);
+iframe {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    border: 1;
+    
 }
 
 section{
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
+    background-color: var(--colBgB);
+    width: 90%;
+    padding: 2%;
+    margin: 2% 5%;
     align-items: center;
-    align-self: center;
-    align-content: center;
+}
+
+hr{
+    border: .1em solid var(--colStr);
+    margin: 2% 0;
+}
+
+strong{
+    color: var(--colStr);
+}
+
+em{
+    color:var(--colIta)
+}
+
+u {
+    text-decoration: none;
+    border-bottom: .2em solid var(--colStr);
+}
+
+
+mark{
+    background-color: var(--colIta);;
+}
+
+::selection {
+  background: var(--colStr);
+  color: var(--colTxt);
+}
+
+
+fieldset{
+    border: .1em solid var(--colStr);
+    padding: 5% 5%;
+}
+
+li{
+    margin: 2% 0;
+}
+
+input{
+    background: transparent;
+    border: none;
+    border-bottom: .2em solid var(--colStr);
+    padding: 1% 1%;
+    margin: 1% 1%;
+    align-items: center;
+    color: var(--colTxt);
+}
+
+input::placeholder{
+    color: var(--colInpH);
+}
+
+button{
+    border: 0;
+    padding: 8%;
+    margin: 1% 1%;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    background: var(--colBtn);
+    color: var(--colTxt);
+    transition: background .2s ease;
+}
+
+button:hover{
+    background: var(--colBtnH);
+}
+
+button:active{
+    background: var(--colBtnA);
+}
+
+a{
+    color: var(--colUrl);
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+a:hover{
+    color: var(--colUrlH);
+}
+
+img:hover{
+    transition: transform .2s ease;
+    transform: scale(1.1);
 }
