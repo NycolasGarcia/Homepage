@@ -1,0 +1,256 @@
+{% extends "common/base.html" %}
+
+{% block title %}Nycolas Garcia - Home{% endblock %}
+
+{% block content %}
+<main class="container py-5">
+
+  <section class="mx-auto h-100, w-100">
+
+    <!-- HERO -->
+    <div class="text-center mb-4">
+      <h1 class="fw-semibold">Nycolas Garcia</h1>
+      <p class="text-muted">Analista de Dados</p>
+      <p class="mb-0">
+        Transformo dados em soluções práticas com Python.
+      </p>
+    </div>
+
+    <!-- CARD -->
+    <div class="card border-0 shadow-sm p-4 bg-body-secondary">
+      <div class="d-flex align-items-center gap-4 flex-md-row">
+
+        <!-- FOTO -->
+        <img 
+          src="https://avatars.githubusercontent.com/u/127459801?v=4"
+          class="rounded"
+          width="120"
+          alt="Nycolas Garcia"
+        >
+
+        <!-- TEXTO -->
+        <div>
+          <p class="mb-2">
+            Pós-Graduando em Engenharia de Aprendizado de Maquina pela FIAP
+          </p>
+
+          <p class="mb-3">
+            Foco em automação, ETL e análise de dados.
+          </p>
+
+          <!-- CONTATO -->
+          <div class="d-flex gap-1">
+            <a href="https://bsky.app/profile/nycolasagrg.bsky.social" target="_blank"><img src="https://skills.syvixor.com/api/icons?&i=bluesky" width="30" alt="BlueSky"></a>
+            <a href="https://www.linkedin.com/in/NycolasAGRGarcia/" target="_blank"><img src="https://skills.syvixor.com/api/icons?&i=linkedin" width="30" alt="LinkedIn"></a>
+            <a href="https://github.com/NycolasGarcia" target="_blank"><img src="https://skills.syvixor.com/api/icons?&i=github" width="30" alt="GitHub"></a>
+            <a href="mailto:nycolasagrg@gmail.com"><img src="https://skills.syvixor.com/api/icons?&i=gmail" width="30" alt="Gmail"></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="container py-5">
+
+  <div class="mx-auto">
+
+    <h2 class="mb-4 text-center">Experiência</h2>
+
+    <div class="d-flex flex-column flex-md-row gap-4">
+
+      <!-- MENU -->
+      <div class="list-group flex-shrink-0">
+        <button class="list-group-item list-group-item-action active"
+                data-bs-toggle="list"
+                data-bs-target="#exp-zennoh">
+          Zen Noh
+          <br>
+          <small class="text-muted">Dados • 2025</small>
+        </button>
+
+        <button class="list-group-item list-group-item-action"
+                data-bs-toggle="list"
+                data-bs-target="#exp-cabell">
+          Cabell
+          <br>
+          <small class="text-muted">TI • 2024</small>
+        </button>
+
+        <button class="list-group-item list-group-item-action"
+                data-bs-toggle="list"
+                data-bs-target="#exp-academico">
+          Projetos Acadêmicos
+        </button>
+      </div>
+
+      <!-- CONTEÚDO -->
+      <div class="tab-content flex-fill">
+
+        <!-- ZENNOH -->
+        <div class="tab-pane fade show active" id="exp-zennoh">
+            <h4>Estágio em Análise de Dados</h4>
+            <p class="text-muted">Jan/2025 – Jun/2025</p>
+            <!-- STACK -->
+            <p class="mb-2">
+                <span class="badge text-bg-primary">Python</span>
+                <span class="badge text-bg-primary">Pandas</span>
+                <span class="badge text-bg-primary">PostgreSQL</span>
+            </p>
+            <!-- IMPACTO -->
+            <ul class="mb-2">
+                <li>Automatizei pipelines de ETL integrando APIs e scraping</li>
+                <li>Desenvolvi dashboards para análise operacional</li>
+                <li>Reduzi tempo de rotinas e aumentei a confiabilidade dos dados</li>
+            </ul>
+
+            <!-- CONTEXTO (opcional) -->
+            <p class="small text-muted">
+                Projetos incluíram análise climática, previsão de embarque e controle de operações.
+            </p>
+
+            </div>
+
+        <!-- CABELL -->
+        <div class="tab-pane fade" id="exp-cabell">
+          <h4>Suporte Técnico</h4>
+          <p class="text-muted">Jul/2024 – Nov/2024</p>
+
+          <ul>
+            <li>Implementei sistema de tickets e organizei o suporte</li>
+            <li>Desenvolvi app para controle de estoque</li>
+            <li>Participei da reestruturação da rede corporativa</li>
+          </ul>
+        </div>
+
+        <!-- ACADÊMICO -->
+        <div class="tab-pane fade" id="exp-academico">
+          <h4>Projetos Acadêmicos</h4>
+
+          <ul>
+            <li>Aplicações de análise de dados</li>
+            <li>APIs para dados educacionais</li>
+            <li>Sistemas web com Python</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="container py-5">
+
+  <h2 class="text-center mb-4">Projetos</h2>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+    <!-- CARD -->
+    <div class="col">
+      <div class="card border-primary">
+        <div class="ratio ratio-16x9">
+            <img src="static/img/matchit.jpg"
+                class="card-img-top object-fit-cover"
+                alt="Match-IT">
+        </div>
+        <div class="card-body d-flex flex-column">
+
+          <h5 class="card-title text-primary">Match-IT</h5>
+
+          <p class="card-text">
+            Um marketplace mobile-first que democratiza o acesso a hardware usado através de swipes e chat.
+          </p>
+
+          <div class="mt-auto d-flex gap-2">
+            <a href="https://github.com/eoLucasS/matchit" class="btn btn-outline-primary flex-fill"><i class="bi bi-github"></i> Github</a>
+            <a href="https://usematchit.vercel.app/" class="btn btn-primary flex-fill"><i class="bi bi-laptop"></i> Acessar</a>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col">
+      <div class="card h-100 border-success">
+        <img src="https://placehold.co/600x400"
+             class="card-img-top"
+             style="aspect-ratio: 16/10; object-fit: cover;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-success">Projeto 2</h5>
+          <p class="card-text">Descrição curta.</p>
+          <div class="mt-auto">
+            <a href="#" class="btn btn-success w-100">Ver no GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 border-warning">
+        <img src="https://placehold.co/600x400"
+             class="card-img-top"
+             style="aspect-ratio: 16/10; object-fit: cover;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-warning">Projeto 3</h5>
+          <p class="card-text">Descrição curta.</p>
+          <div class="mt-auto">
+            <a href="#" class="btn btn-warning w-100">Ver no GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 border-danger">
+        <img src="https://placehold.co/600x400"
+             class="card-img-top"
+             style="aspect-ratio: 16/10; object-fit: cover;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-danger">Projeto 4</h5>
+          <p class="card-text">Descrição curta.</p>
+          <div class="mt-auto">
+            <a href="#" class="btn btn-danger w-100">Ver no GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 border-info">
+        <img src="https://placehold.co/600x400"
+             class="card-img-top"
+             style="aspect-ratio: 16/10; object-fit: cover;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-info">Projeto 5</h5>
+          <p class="card-text">Descrição curta.</p>
+          <div class="mt-auto">
+            <a href="#" class="btn btn-info w-100">Ver no GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD FINAL -->
+    <div class="col">
+      <div class="card h-100 border-secondary text-center d-flex align-items-center justify-content-center">
+
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h5 class="card-title text-secondary">Mais projetos</h5>
+          <p class="card-text">Veja todos os meus projetos no GitHub</p>
+          <a href="#" class="btn btn-outline-secondary mt-2">Acessar GitHub</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+</main>
+{% endblock %}
