@@ -1,0 +1,5 @@
+__pyacache__
+venv
+.env*
+!.env.example
+.env.local

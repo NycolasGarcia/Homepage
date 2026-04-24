@@ -1,68 +1,132 @@
 {% extends "common/base.html" %}
 
-{% block title %}Nycolas Garcia - Home{% endblock %}
+{% block title %}Nycolas Garcia - Dev Home{% endblock %}
 
 {% block content %}
-<main class="container py-5">
-
-  <section class="mx-auto h-100, w-100">
+<main class="shadow bg-body">
+  <section class="container py-5 mx-auto">
 
     <!-- HERO -->
-    <div class="text-center mb-4">
+    <div class="text-center mb-4" data-aos="fade-down" data-aos-delay="0">
       <h1 class="fw-semibold">Nycolas Garcia</h1>
       <p class="text-muted">Analista de Dados</p>
-      <p class="mb-0">
-        Transformo dados em soluções práticas com Python.
-      </p>
     </div>
 
     <!-- CARD -->
-    <div class="card border-0 shadow-sm p-4 bg-body-secondary">
-      <div class="d-flex align-items-center gap-4 flex-md-row">
-
-        <!-- FOTO -->
+    <div class="card border-0 shadow p-4 bg-body-secondary d-flex flex-column gap-4" data-aos="fade-down" data-aos-delay="100">
+      <!-- FOTO -->
+      <div class="text-center">
         <img 
           src="https://avatars.githubusercontent.com/u/127459801?v=4"
-          class="rounded"
-          width="120"
+          class="rounded-circle border border-2 border-primary-subtle mx-auto img-fluid mb-1"
+          width="200"
           alt="Nycolas Garcia"
+          data-aos="zoom-in" data-aos-delay="300"
         >
-
-        <!-- TEXTO -->
-        <div>
-          <p class="mb-2">
-            Pós-Graduando em Engenharia de Aprendizado de Maquina pela FIAP
-          </p>
-
-          <p class="mb-3">
-            Foco em automação, ETL e análise de dados.
-          </p>
-
-          <!-- CONTATO -->
-          <div class="d-flex gap-1">
-            <a href="https://bsky.app/profile/nycolasagrg.bsky.social" target="_blank"><img src="https://skills.syvixor.com/api/icons?&i=bluesky" width="30" alt="BlueSky"></a>
-            <a href="https://www.linkedin.com/in/NycolasAGRGarcia/" target="_blank"><img src="https://skills.syvixor.com/api/icons?&i=linkedin" width="30" alt="LinkedIn"></a>
-            <a href="https://github.com/NycolasGarcia" target="_blank"><img src="https://skills.syvixor.com/api/icons?&i=github" width="30" alt="GitHub"></a>
-            <a href="mailto:nycolasagrg@gmail.com"><img src="https://skills.syvixor.com/api/icons?&i=gmail" width="30" alt="Gmail"></a>
-          </div>
+        <p class="text-muted">
+          Python | FastAPI | Pandas | Scikit-learn
+        </p>
+      </div>
+      <!-- TEXTO E CONTATOS -->
+      <div class="d-flex flex-column flex-wrap">
+        <p class="mb-2 flex-grow-1">
+          Analista de Dados e Engenheiro de Aprendizado de Máquina, transformo dados em soluções práticas com Python, com experiência em pipelines de ETL, EDA e 
+          ML. Bacharel em Ciências da Computação pela USJT e Pós-Graduando em Engenharia de Aprendizado de Máquina pela FIAP.
+        </p>
+        
+        <div class="d-flex gap-2 mt-auto">
+          <a href="https://bsky.app/profile/nycolasagrg.bsky.social" target="_blank"><img src="https://skills.syvixor.com/api/icons?&i=bluesky" width="30" alt="BlueSky"></a>
+        <a href="https://www.linkedin.com/in/NycolasAGRGarcia/" target="_blank"><img src="https://skills.syvixor.com/api/icons?&i=linkedin" width="30" alt="LinkedIn"></a>
+        <a href="https://github.com/NycolasGarcia" target="_blank"><img src="https://skills.syvixor.com/api/icons?&i=github" width="30" alt="GitHub"></a>
+        <a href="mailto:nycolasagrg@gmail.com"><img src="https://skills.syvixor.com/api/icons?&i=gmail" width="30" alt="Gmail"></a>
         </div>
-
       </div>
     </div>
-
   </section>
 
+  <section class="container py-5 mx-auto">
+    <h2 class="text-center mb-4">Certificados</h2>
 
-  <section class="container py-5">
+    <div class="row g-4">
 
-  <div class="mx-auto">
+      <!-- CARD -->
+      <div class="col-md-3">
+        <div class="border rounded-4 p-3 shadow-sm h-100" data-aos="fade-up" data-aos-delay="200">
+          <div class="d-flex gap-3 align-items-start">
+            <i class="bi bi-award-fill fs-1 text-success"></i>
+            <div>
+              <h5 class="mb-1">AWS Cloud Foundations</h5>
+              <p class="text-muted small mb-2">Amazon Web Services</p>
+              <span class="badge bg-success-subtle text-success-emphasis rounded-pill">07/Dez/2025</span>
+              <div class="mt-2">
+                <a href="#" class="text-decoration-none small">Ver credencial <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <h2 class="mb-4 text-center">Experiência</h2>
+      <!-- CARD -->
+      <div class="col-md-3">
+        <div class="border rounded-4 p-3 shadow-sm h-100" data-aos="fade-up" data-aos-delay="300">
+          <div class="d-flex gap-3 align-items-start">
+            <i class="bi bi-award-fill fs-1 text-success"></i>
+            <div>
+              <h5 class="mb-1">English Certificate - C2</h5>
+              <p class="text-muted small mb-2">EF SET</p>
+              <span class="badge bg-success-subtle text-success-emphasis rounded-pill">06/Dez/2025</span>
+              <div class="mt-2">
+                <a href="#" class="text-decoration-none small">Ver credencial <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- CARD -->
+      <div class="col-md-3">
+        <div class="border rounded-4 p-3 shadow-sm h-100" data-aos="fade-up" data-aos-delay="400">
+          <div class="d-flex gap-3 align-items-start">
+            <i class="bi bi-award-fill fs-1 text-success"></i>
+            <div>
+              <h5 class="mb-1">Qualificação Profissional em Inteligência Artificial</h5>
+              <p class="text-muted small mb-2">USJT</p>
+              <span class="badge bg-success-subtle text-success-emphasis rounded-pill">04/Jul/2024</span>
+              <div class="mt-2">
+                <a href="#" class="text-decoration-none small">Ver credencial <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD -->
+      <div class="col-md-3">
+        <div class="border rounded-4 p-3 shadow-sm h-100" data-aos="fade-up" data-aos-delay="500">
+          <div class="d-flex gap-3 align-items-start">
+            <i class="bi bi-award-fill fs-1 text-success"></i>
+            <div>
+              <h5 class="mb-1">Análise de dados e big data</h5>
+              <p class="text-muted small mb-2">USJT</p>
+              <span class="badge bg-success-subtle text-success-emphasis rounded-pill">15/Dez/2023</span>
+              <div class="mt-2">
+                <a href="#" class="text-decoration-none small">Ver credencial <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="container py-5 mx-auto">
+   <h2 class="mb-4 text-center">Experiência</h2>
     <div class="d-flex flex-column flex-md-row gap-4">
 
       <!-- MENU -->
-      <div class="list-group flex-shrink-0">
+      <div class="list-group flex-shrink-0" data-aos="fade-right" data-aos-delay="200">
         <button class="list-group-item list-group-item-action active"
                 data-bs-toggle="list"
                 data-bs-target="#exp-zennoh">
@@ -82,175 +146,518 @@
         <button class="list-group-item list-group-item-action"
                 data-bs-toggle="list"
                 data-bs-target="#exp-academico">
-          Projetos Acadêmicos
+          Extra Curriculares
         </button>
       </div>
 
       <!-- CONTEÚDO -->
-      <div class="tab-content flex-fill">
+      <div class="tab-content flex-fill bg-body-secondary p-4 rounded-4 shadow" data-aos="fade-left" data-aos-delay="200">
 
         <!-- ZENNOH -->
         <div class="tab-pane fade show active" id="exp-zennoh">
-            <h4>Estágio em Análise de Dados</h4>
-            <p class="text-muted">Jan/2025 – Jun/2025</p>
-            <!-- STACK -->
-            <p class="mb-2">
-                <span class="badge text-bg-primary">Python</span>
-                <span class="badge text-bg-primary">Pandas</span>
-                <span class="badge text-bg-primary">PostgreSQL</span>
-            </p>
-            <!-- IMPACTO -->
-            <ul class="mb-2">
-                <li>Automatizei pipelines de ETL integrando APIs e scraping</li>
-                <li>Desenvolvi dashboards para análise operacional</li>
-                <li>Reduzi tempo de rotinas e aumentei a confiabilidade dos dados</li>
-            </ul>
+          <h4><i class="bi bi-graph-up"></i> Analista de Dados</h4>
+          <p class="text-muted"><i class="bi bi-calendar3"></i> Jan/2025 – Jun/2025</p>
+          
+          <!-- STACK -->
+          Ferramentas:
+          <p class="text-muted">
+            <span class="badge text-bg-primary">Python</span>
+            <span class="badge text-bg-primary">Pandas</span>
+            <span class="badge text-bg-primary">Plotly</span>
+            <span class="badge text-bg-primary">Flask</span>
+            <span class="badge text-bg-primary">PostgreSQL</span>
+            <span class="badge text-bg-primary">Jupyter</span>
+          </p>
 
-            <!-- CONTEXTO (opcional) -->
-            <p class="small text-muted">
-                Projetos incluíram análise climática, previsão de embarque e controle de operações.
-            </p>
+          <!-- SKILLS -->
+          Habilidades:
+          <p class="text-muted">
+            <span class="badge text-bg-success">ETL</span>
+            <span class="badge text-bg-success">EDA</span>
+            <span class="badge text-bg-success">KPIs</span>
+            <span class="badge text-bg-success">Machine Learning</span>
+            <span class="badge text-bg-success">APIs & Web Scraping</span>
+            <span class="badge text-bg-success">Dashboards & BI</span>
+          </p>
 
-            </div>
+          <!--METODOLOGIAS-->
+          Metodologias:
+          <p class="text-muted">
+            <span class="badge text-bg-warning">Agile</span>
+            <span class="badge text-bg-warning">CRISP-DM</span>
+            <span class="badge text-bg-warning">SCRUM</span>
+          </p>
+
+          <!-- IMPACTO -->
+          Realizações:
+          <ul class="mb-2">
+            <li>Automatizei pipelines de ETL e EDA integrando APIs e web scraping, reduzindo o tempo de rotinas em <b>90%</b></li>
+            <li>Criei modelos de ML para predição de quantidade e qualidade de <b>2</b> safras com acurácia de <b>88%</b> e correlação com clima usando <b>8</b> variáveis, integrando dados do INMET e CONAB, adotando a metodologia CRISP-DM</li>
+            <li>Desenvolvi aplicação web para padronização de <b>9</b> métricas de P&L, com <b>3</b> dashboards interativos e reduzindo em <b>99%</b> o tempo de geração desses relatórios, aplicando a metodologia ágil SCRUM</li>
+            <li>Atuei como desenvolvedor principal do CropTour, aplicação mobile-first e offline-first que registrou <b>50+</b> visitas técnicas, formulários interativos, upload de <b>250+</b> fotos, geolocalização e <b>6</b> KPIs internas de qualidade de safra</li>
+            <li>Expandi datasets de climatologia em <b>mais de 5x</b> (~100 para ~500-600 estações), consolidando séries históricas de <b>5 a 10 anos</b> com ganho expressivo em qualidade e confiabilidade</li>
+          </ul>
+
+          <!-- CONTEXTO -->
+           <div class="w-75 justify-content-center mx-auto">
+            <p class="text-muted text-start">
+              <i class="bi bi-info-circle text-info px-1"></i> 
+              Atuei como Analista de Dados na Zen Noh, uma das maiores cooperativas agrícolas do mundo, focando em análise de dados climáticos e agrícolas para otimizar a produção 
+              e reduzir riscos. Minha experiência incluiu desde a coleta e limpeza de dados até a construção de modelos preditivos e desenvolvimento de aplicações web e dashboards 
+              interativos para tomada de decisão estratégica.
+            </p>
+          </div>
+        </div>
 
         <!-- CABELL -->
         <div class="tab-pane fade" id="exp-cabell">
-          <h4>Suporte Técnico</h4>
-          <p class="text-muted">Jul/2024 – Nov/2024</p>
+          <h4><i class="bi bi-pc-display-horizontal"></i> Analista de TI</h4>
+          <p class="text-muted"><i class="bi bi-calendar3"></i> Jun/2024 – Nov/2024</p>
 
-          <ul>
-            <li>Implementei sistema de tickets e organizei o suporte</li>
-            <li>Desenvolvi app para controle de estoque</li>
-            <li>Participei da reestruturação da rede corporativa</li>
+          <!-- STACK -->
+          Ferramentas:
+          <p class="text-muted">
+            <span class="badge text-bg-primary">Microsoft 365</span>
+            <span class="badge text-bg-primary">Windows Server</span>
+            <span class="badge text-bg-primary">Excel</span>
+            <span class="badge text-bg-primary">Python</span>
+            <span class="badge text-bg-primary">Flask</span>
+            <span class="badge text-bg-primary">Bootstrap</span>
+          </p>
+
+          <!-- SKILLS -->
+          Habilidades:
+          <p class="text-muted">
+            <span class="badge text-bg-success">Helpdesk & Suporte</span>
+            <span class="badge text-bg-success">Manutenção de Hardware</span>
+            <span class="badge text-bg-success">Configuração de Rede</span>
+            <span class="badge text-bg-success">Mobile-First</span>
+          </p>
+
+          <!--METODOLOGIAS-->
+          Metodologias:
+          <p class="text-muted">
+            <span class="badge text-bg-warning">Kanban</span>
+            <span class="badge text-bg-warning">Eisenhower</span>
+          </p>
+
+          <!-- REALIZAÇÕES -->
+          Realizações:
+          <ul class="mb-2">
+            <li>Implementei sistema de tickets usando a metodologias Kanban e Eisenhower, que atendeu <b>50+</b> colaboradores e reduziu o fluxo de atendimento em <b>20%</b></li>
+            <li>Desenvolvi aplicação web de controle de estoque com <b>560+</b> endereços de armazenagem, agilizando busca e coleta em <b>80%</b></li>
+            <li>Liderei a reestruturação da infraestrutura de TI, instalando e configurando <b>4</b> máquinas, <b>3</b> pontos de rede e acesso ao servidor <b>on-premises</b></li>
+            <li>Atuei como suporte técnico principal na <b>Beauty Fair 2024</b> (maior feira da indústria na América Latina), realizando preparo, transporte e suporte em tempo real de toda a infraestrutura, com <b>uptime de 99%</b></li>
+            <li>Criei sistema de governança do departamento de TI, registrando estoque, log de requisições, histórico de manutenções e compras de suprimentos</li>
           </ul>
+
+          <!-- CONTEXTO -->
+          <div class="w-75 justify-content-center mx-auto">
+            <p class="text-muted text-start">
+              <i class="bi bi-info-circle text-info px-1"></i>
+              Atuei como Técnico de Informática na Cabell, empresa de médio porte no setor cosmético, sendo responsável por suporte a colaboradores, manutenção de hardware, 
+              configuração de servidor on-premises e gestão de ativos de TI e desenvolvimento de ferramentas internas.
+            </p>
+          </div>
         </div>
 
         <!-- ACADÊMICO -->
         <div class="tab-pane fade" id="exp-academico">
-          <h4>Projetos Acadêmicos</h4>
-
+          <h4>Extra-Curriculares</h4>
           <ul>
-            <li>Aplicações de análise de dados</li>
-            <li>APIs para dados educacionais</li>
-            <li>Sistemas web com Python</li>
+            <li>AWS - Cloud Fondations</li>
+            <li>Inglês - C2</li>
+            <li>USJT - Inteligência Artificial</li>
           </ul>
         </div>
 
       </div>
-
-    </div>
-
   </div>
-
 </section>
 
-<section class="container py-5">
+<section class="container py-5 mx-auto">
+  <h2 class="text-center mb-4">Meu Workflow</h2>
 
+  <div class="row g-4">
+    <!-- Card 1 -->
+    <div class="col-md-3" data-aos="fade-right" data-aos-delay="200">
+      <button class="btn btn-outline-primary w-100 h-100 rounded-4 p-4 d-flex flex-column">
+        <i class="bi bi-building-fill fs-1 mb-2"></i>
+        <strong class="h5">Entender o Negócio</strong>
+        <p class="text-body mt-2 small flex-grow-1">
+          Busco entender as dores, necessidades e objetivos do negócio para garantir soluções relevantes e impactantes.
+        </p>
+      </button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-3" data-aos="fade-right" data-aos-delay="100">
+      <button class="btn btn-outline-primary w-100 h-100 rounded-4 p-4 d-flex flex-column">
+        <i class="bi bi-graph-up fs-1 mb-2"></i>
+        <strong class="h5">Analisar os Dados</strong>
+        <p class="text-body mt-2 small flex-grow-1">
+          Coleto, analiso e interpreto dados disponíveis para identificar padrões, tendências e insights que contribuam para a tomada de decisão.
+        </p>
+      </button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-3" data-aos="fade-left" data-aos-delay="100">
+      <button class="btn btn-outline-primary w-100 h-100 rounded-4 p-4 d-flex flex-column">
+        <i class="bi bi-brush fs-1 mb-2"></i>
+        <strong class="h5">Limpar e Preparar</strong>
+        <p class="text-body mt-2 small flex-grow-1">
+          Limpo, sanitizo, normalizo e transformo os dados para garantir qualidade, consistência e adequação às necessidades do modelo ou análise.
+        </p>
+      </button>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-md-3" data-aos="fade-left" data-aos-delay="200">
+      <button class="btn btn-outline-primary w-100 h-100 rounded-4 p-4 d-flex flex-column">
+        <i class="bi bi-code-slash fs-1 mb-2"></i>
+        <strong class="h5">Modelar e Desenvolver</strong>
+        <p class="text-body mt-2 small flex-grow-1">
+          Desenvolvo uma solução que sirva às necessidades do negócio, seja um modelo, um dashboard ou aplicação.
+        </p>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="container py-5 mx-auto">
   <h2 class="text-center mb-4">Projetos</h2>
-
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
     <!-- CARD -->
     <div class="col">
-      <div class="card border-primary">
-        <div class="ratio ratio-16x9">
-            <img src="static/img/matchit.jpg"
-                class="card-img-top object-fit-cover"
+      <div class="card h-100 border-primary rounded-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="ratio ratio-16x9 ">
+            <img src="https://raw.githubusercontent.com/NycolasGarcia/matchit/refs/heads/main/public/preview.jpg"
+                class="card-img-top object-fit-cover rounded-top-4"
                 alt="Match-IT">
         </div>
-        <div class="card-body d-flex flex-column">
-
+        <div class="card-body d-flex flex-column rounded-bottom-4">
           <h5 class="card-title text-primary">Match-IT</h5>
-
-          <p class="card-text">
-            Um marketplace mobile-first que democratiza o acesso a hardware usado através de swipes e chat.
-          </p>
-
+          <p class="card-text">Um marketplace mobile-first que democratiza o acesso a hardware usado através de swipes e chat.</p>
           <div class="mt-auto d-flex gap-2">
-            <a href="https://github.com/eoLucasS/matchit" class="btn btn-outline-primary flex-fill"><i class="bi bi-github"></i> Github</a>
-            <a href="https://usematchit.vercel.app/" class="btn btn-primary flex-fill"><i class="bi bi-laptop"></i> Acessar</a>
+            <a href="https://usematchit.vercel.app/" target="_blank" class="btn btn-primary flex-fill"><i class="bi bi-laptop"></i> Acessar</a>
+            <a href="https://github.com/NycolasGarcia/matchit" target="_blank" class="btn btn-outline-primary flex-fill"><i class="bi bi-github"></i> Github</a>
         </div>
-
         </div>
       </div>
     </div>
 
-    
+    <!-- CARD -->
     <div class="col">
-      <div class="card h-100 border-success">
-        <img src="https://placehold.co/600x400"
-             class="card-img-top"
-             style="aspect-ratio: 16/10; object-fit: cover;">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title text-success">Projeto 2</h5>
-          <p class="card-text">Descrição curta.</p>
+      <div class="card h-100 border-success rounded-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="ratio ratio-16x9">
+          <img src="https://raw.githubusercontent.com/NycolasGarcia/EDA-Speeder/refs/heads/main/static/imgs/preview-image.png"
+              class="card-img-top object-fit-cover rounded-top-4"
+                alt="EDA_Speeder">
+        </div>
+        <div class="card-body d-flex flex-column rounded-bottom-4">
+          <h5 class="card-title text-success">EDA-Speeder</h5>
+          <p class="card-text">Ferramenta leve, rápida e multiplataforma para análise exploratória de dados (EDA) e preparação de dados.</p>
           <div class="mt-auto">
-            <a href="#" class="btn btn-success w-100">Ver no GitHub</a>
+            <a href="https://github.com/NycolasGarcia/EDA-Speeder" target="_blank" class="btn btn-outline-success w-100"><i class="bi bi-github"></i> GitHub</a>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- CARD -->
     <div class="col">
-      <div class="card h-100 border-warning">
-        <img src="https://placehold.co/600x400"
-             class="card-img-top"
-             style="aspect-ratio: 16/10; object-fit: cover;">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title text-warning">Projeto 3</h5>
-          <p class="card-text">Descrição curta.</p>
-          <div class="mt-auto">
-            <a href="#" class="btn btn-warning w-100">Ver no GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="card h-100 border-danger">
-        <img src="https://placehold.co/600x400"
-             class="card-img-top"
-             style="aspect-ratio: 16/10; object-fit: cover;">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title text-danger">Projeto 4</h5>
-          <p class="card-text">Descrição curta.</p>
-          <div class="mt-auto">
-            <a href="#" class="btn btn-danger w-100">Ver no GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="card h-100 border-info">
-        <img src="https://placehold.co/600x400"
-             class="card-img-top"
-             style="aspect-ratio: 16/10; object-fit: cover;">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title text-info">Projeto 5</h5>
-          <p class="card-text">Descrição curta.</p>
-          <div class="mt-auto">
-            <a href="#" class="btn btn-info w-100">Ver no GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD FINAL -->
-    <div class="col">
-      <div class="card h-100 border-secondary text-center d-flex align-items-center justify-content-center">
-
+      <div class="card h-100 border-secondary rounded-4 text-center align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="200">
         <div class="card-body d-flex flex-column justify-content-center">
           <h5 class="card-title text-secondary">Mais projetos</h5>
           <p class="card-text">Veja todos os meus projetos no GitHub</p>
-          <a href="#" class="btn btn-outline-secondary mt-2">Acessar GitHub</a>
+          <a href="https://github.com/NycolasGarcia" target="_blank" class="btn btn-outline-secondary mt-2"><i class="bi bi-github"></i> GitHub</a>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- Stack Section -->
+<section class="container py-5 mx-auto my-auto">
+  <h2 class="mb-4 text-center">Minha Stack</h2>
+
+  <div class="d-flex flex-column flex-md-row gap-4">
+    <!-- GRID 4x4 (abas/buttons) -->
+    <div class="flex-shrink-0">
+      <div class="list-group rounded-4 overflow-hidden shadow select-user-none" id="stack-tab" role="tablist" data-aos="fade-right" data-aos-delay="100">
+        <div class="d-grid select-user-none" style="grid-template-columns: repeat(4, 1fr);">
+          <!-- Linha 1 -->
+          <button class="list-group-item list-group-item-action text-center p-2 border-0 rounded-0 show active" 
+                  data-bs-toggle="list" data-bs-target="#stack-python" role="tab">
+            <img src="https://skills.syvixor.com/api/icons?i=python" alt="python" draggable="false">
+            <div class="small mt-1">Python</div>
+          </button>
+          <button class="list-group-item list-group-item-action text-center p-2 border-0 rounded-0" 
+                  data-bs-toggle="list" data-bs-target="#stack-flask" role="tab">
+            <img src="https://skills.syvixor.com/api/icons?i=flask" alt="flask" draggable="false">
+            <div class="small mt-1">Flask</div>
+          </button>
+          <button class="list-group-item list-group-item-action text-center p-2 border-0 rounded-0" 
+                  data-bs-toggle="list" data-bs-target="#stack-fastapi" role="tab">
+            <img src="https://skills.syvixor.com/api/icons?i=fastapi" alt="fastapi" draggable="false">
+            <div class="small mt-1">FastAPI</div>
+          </button>
+          <button class="list-group-item list-group-item-action text-center p-2 border-0 rounded-0" 
+                  data-bs-toggle="list" data-bs-target="#stack-pywebview" role="tab">
+            <img src="https://skills.syvixor.com/api/icons?i=pywebview" alt="pywebview" draggable="false">
+            <div class="small mt-1">PyWebView</div>
+          </button>
+          <!-- Linha 2 -->
+          <button class="list-group-item list-group-item-action text-center p-2 border-0 rounded-0" 
+                  data-bs-toggle="list" data-bs-target="#stack-pandas" role="tab">
+            <img src="https://skills.syvixor.com/api/icons?i=pandas" alt="pandas" draggable="false">
+            <div class="small mt-1">Pandas</div>
+          </button>
+          <button class="list-group-item list-group-item-action text-center p-2 border-0 rounded-0" 
+                  data-bs-toggle="list" data-bs-target="#stack-jupyter" role="tab">
+            <img src="https://skills.syvixor.com/api/icons?i=jupyter" alt="jupyter" draggable="false">
+            <div class="small mt-1">Jupyter</div>
+          </button>
+          <button class="list-group-item list-group-item-action text-center p-2 border-0 rounded-0" 
+                  data-bs-toggle="list" data-bs-target="#stack-plotly" role="tab">
+            <img src="https://skills.syvixor.com/api/icons?i=plotly" alt="plotly" draggable="false">
+            <div class="small mt-1">Plotly</div>
+          </button>
+          <button class="list-group-item list-group-item-action text-center p-2 border-0 rounded-0" 
+                  data-bs-toggle="list" data-bs-target="#stack-seaborn" role="tab">
+            <img src="https://skills.syvixor.com/api/icons?i=seaborn" alt="seaborn" draggable="false">
+            <div class="small mt-1">Seaborn</div>
+          </button>
+          <!-- Linha 3 -->
+          <button class="list-group-item list-group-item-action text-center p-2 border-0 rounded-0" 
+                  data-bs-toggle="list" data-bs-target="#stack-sklearn" role="tab">
+            <img src="https://skills.syvixor.com/api/icons?i=scikitlearn" alt="scikitlearn" draggable="false">
+            <div class="small mt-1">Scikit-learn</div>
+          </button>
+          <button class="list-group-item list-group-item-action text-center p-2 border-0 rounded-0" 
+                  data-bs-toggle="list" data-bs-target="#stack-pytorch" role="tab">
+            <img src="https://skills.syvixor.com/api/icons?i=pytorch" alt="pytorch" draggable="false">
+            <div class="small mt-1">PyTorch</div>
+          </button>
+          <button class="list-group-item list-group-item-action text-center p-2 border-0 rounded-0" 
+                  data-bs-toggle="list" data-bs-target="#stack-opencv" role="tab">
+            <img src="https://skills.syvixor.com/api/icons?i=opencv" alt="opencv" draggable="false">
+            <div class="small mt-1">OpenCV</div>
+          </button>
+          <button class="list-group-item list-group-item-action text-center p-2 border-0 rounded-0" 
+                  data-bs-toggle="list" data-bs-target="#stack-mlflow" role="tab">
+            <img src="https://skills.syvixor.com/api/icons?i=mlflow" alt="mlflow" draggable="false">
+            <div class="small mt-1">MLflow</div>
+          </button>
+          <!-- Linha 4 -->
+          <button class="list-group-item list-group-item-action text-center p-2 border-0 rounded-0" 
+                  data-bs-toggle="list" data-bs-target="#stack-github" role="tab">
+            <img src="https://skills.syvixor.com/api/icons?i=github" alt="github" draggable="false">
+            <div class="small mt-1">GitHub</div>
+          </button>
+          <button class="list-group-item list-group-item-action text-center p-2 border-0 rounded-0" 
+                  data-bs-toggle="list" data-bs-target="#stack-docker" role="tab">
+            <img src="https://skills.syvixor.com/api/icons?i=docker" alt="docker" draggable="false">
+            <div class="small mt-1">Docker</div>
+          </button>
+          <button class="list-group-item list-group-item-action text-center p-2 border-0 rounded-0" 
+                  data-bs-toggle="list" data-bs-target="#stack-hf" role="tab">
+            <img src="https://skills.syvixor.com/api/icons?i=huggingface" alt="huggingface" draggable="false">
+            <div class="small mt-1">HuggingFace</div>
+          </button>
+          <button class="list-group-item list-group-item-action text-center p-2 border-0 rounded-0" 
+                  data-bs-toggle="list" data-bs-target="#stack-aws" role="tab">
+            <img src="https://skills.syvixor.com/api/icons?i=aws" alt="aws" draggable="false">
+            <div class="small mt-1">AWS</div>
+          </button>
+        </div>
       </div>
     </div>
 
-  </div>
+    <!-- CONTEÚDO (painel direito) -->
+    <div class="tab-content flex-fill" data-aos="fade-left" data-aos-delay="100">
+      <!-- Python -->
+      <div class="tab-pane fade show active bg-body-secondary rounded-4 shadow p-4 h-100" id="stack-python">
+        <div class="d-flex gap-3 align-items-center mb-3">
+          <i class="bi bi-file-code-fill fs-1 text-primary"></i>
+          <h3 class="mb-0">Python</h3>
+        </div>
+        <div class="text-secondary mb-3">
+          linguagem | multiparadigma | tipagem dinâmica
+        </div>
+        <p><strong>O que é:</strong> Linguagem de programação de alto nível, versátil e com enorme ecossistema.</p>
+        <p><strong>Como uso:</strong> ETL, análise exploratória, automação de tarefas, backend de APIs (Flask/FastAPI) e scripts para integração de dados.</p>
+      </div>
 
+      <!-- Flask -->
+      <div class="tab-pane fade bg-body-secondary rounded-4 shadow p-4 h-100" id="stack-flask">
+        <div class="d-flex gap-3 align-items-center mb-3">
+          <i class="bi bi-braces fs-1 text-success"></i>
+          <h3 class="mb-0">Flask</h3>
+        </div>
+        <div class="text-secondary mb-3">microframework | backend | minimalista</div>
+        <p><strong>O que é:</strong> Framework web minimalista para Python, flexível e leve.</p>
+        <p><strong>Como uso:</strong> Prototipagem rápida de APIs e aplicações internas (ex: CropTour, dashboard de P&L).</p>
+      </div>
+
+      <!-- FastAPI -->
+      <div class="tab-pane fade bg-body-secondary rounded-4 shadow p-4 h-100" id="stack-fastapi">
+        <div class="d-flex gap-3 align-items-center mb-3">
+          <i class="bi bi-lightning-charge-fill fs-1 text-warning"></i>
+          <h3 class="mb-0">FastAPI</h3>
+        </div>
+        <div class="text-secondary mb-3">async | OpenAPI | alto desempenho</div>
+        <p><strong>O que é:</strong> Framework moderno para APIs com suporte nativo a assincronia e documentação automática.</p>
+        <p><strong>Como uso:</strong> Endpoints de machine learning e integração com modelos em produção.</p>
+      </div>
+
+      <!-- PyWebView -->
+      <div class="tab-pane fade bg-body-secondary rounded-4 shadow p-4 h-100" id="stack-pywebview">
+        <div class="d-flex gap-3 align-items-center mb-3">
+          <i class="bi bi-window-fullscreen fs-1 text-secondary"></i>
+          <h3 class="mb-0">PyWebView</h3>
+        </div>
+        <div class="text-secondary mb-3">desktop | webview | híbrido</div>
+        <p><strong>O que é:</strong> Biblioteca para embutir interfaces web em aplicações desktop.</p>
+        <p><strong>Como uso:</strong> Transformar dashboards Plotly/Dash em aplicações offline-first para áreas sem internet.</p>
+      </div>
+
+      <!-- Pandas -->
+      <div class="tab-pane fade bg-body-secondary rounded-4 shadow p-4 h-100" id="stack-pandas">
+        <div class="d-flex gap-3 align-items-center mb-3">
+          <i class="bi bi-table fs-1 text-info"></i>
+          <h3 class="mb-0">Pandas</h3>
+        </div>
+        <div class="text-secondary mb-3">DataFrame | manipulação | análise</div>
+        <p><strong>O que é:</strong> Biblioteca fundamental para manipulação e análise de dados tabulares.</p>
+        <p><strong>Como uso:</strong> Limpeza, transformação, agregação e merge de datasets climáticos, agrícolas e de estoque.</p>
+      </div>
+
+      <!-- Jupyter -->
+      <div class="tab-pane fade bg-body-secondary rounded-4 shadow p-4 h-100" id="stack-jupyter">
+        <div class="d-flex gap-3 align-items-center mb-3">
+          <i class="bi bi-journal-bookmark-fill fs-1 text-orange"></i>
+          <h3 class="mb-0">Jupyter</h3>
+        </div>
+        <div class="text-secondary mb-3">notebook | prototipagem | EDA</div>
+        <p><strong>O que é:</strong> Ambiente interativo baseado em notebooks para desenvolvimento exploratório.</p>
+        <p><strong>Como uso:</strong> Análises exploratórias, validação de hipóteses e compartilhamento de resultados com stakeholders.</p>
+      </div>
+
+      <!-- Plotly -->
+      <div class="tab-pane fade bg-body-secondary rounded-4 shadow p-4 h-100" id="stack-plotly">
+        <div class="d-flex gap-3 align-items-center mb-3">
+          <i class="bi bi-graph-up fs-1 text-danger"></i>
+          <h3 class="mb-0">Plotly</h3>
+        </div>
+        <div class="text-secondary mb-3">gráficos interativos | dashboards</div>
+        <p><strong>O que é:</strong> Biblioteca para visualizações interativas e dashboards (Dash).</p>
+        <p><strong>Como uso:</strong> Criação de dashboards de KPIs de safra e qualidade, com filtros dinâmicos.</p>
+      </div>
+
+      <!-- Seaborn -->
+      <div class="tab-pane fade bg-body-secondary rounded-4 shadow p-4 h-100" id="stack-seaborn">
+        <div class="d-flex gap-3 align-items-center mb-3">
+          <i class="bi bi-bar-chart-steps fs-1 text-teal"></i>
+          <h3 class="mb-0">Seaborn</h3>
+        </div>
+        <div class="text-secondary mb-3">estatístico | matplotlib | visualização</div>
+        <p><strong>O que é:</strong> Biblioteca de visualização estatística baseada no Matplotlib.</p>
+        <p><strong>Como uso:</strong> Análise de correlação entre variáveis climáticas e produtividade, heatmaps e pairplots.</p>
+      </div>
+
+      <!-- Scikit-learn -->
+      <div class="tab-pane fade bg-body-secondary rounded-4 shadow p-4 h-100" id="stack-sklearn">
+        <div class="d-flex gap-3 align-items-center mb-3">
+          <i class="bi bi-cpu fs-1 text-primary"></i>
+          <h3 class="mb-0">Scikit-learn</h3>
+        </div>
+        <div class="text-secondary mb-3">machine learning | clássico | pipelines</div>
+        <p><strong>O que é:</strong> Biblioteca completa para ML tradicional (regressão, classificação, clustering).</p>
+        <p><strong>Como uso:</strong> Modelos preditivos de safra (regressão), classificação de qualidade e feature engineering.</p>
+      </div>
+
+      <!-- PyTorch -->
+      <div class="tab-pane fade bg-body-secondary rounded-4 shadow p-4 h-100" id="stack-pytorch">
+        <div class="d-flex gap-3 align-items-center mb-3">
+          <i class="bi bi-fire fs-1 text-danger"></i>
+          <h3 class="mb-0">PyTorch</h3>
+        </div>
+        <div class="text-secondary mb-3">deep learning | flexível | GPU</div>
+        <p><strong>O que é:</strong> Framework de deep learning com computação dinâmica e ótima para pesquisa.</p>
+        <p><strong>Como uso:</strong> Fine-tuning de modelos de linguagem e visão computacional para análise de imagens de plantio.</p>
+      </div>
+
+      <!-- OpenCV -->
+      <div class="tab-pane fade bg-body-secondary rounded-4 shadow p-4 h-100" id="stack-opencv">
+        <div class="d-flex gap-3 align-items-center mb-3">
+          <i class="bi bi-camera-fill fs-1 text-secondary"></i>
+          <h3 class="mb-0">OpenCV</h3>
+        </div>
+        <div class="text-secondary mb-3">visão computacional | imagem | real-time</div>
+        <p><strong>O que é:</strong> Biblioteca de visão computacional e processamento de imagens.</p>
+        <p><strong>Como uso:</strong> Extração de características de fotos de lavouras, detecção de pragas e pré-processamento para modelos.</p>
+      </div>
+
+      <!-- MLflow -->
+      <div class="tab-pane fade bg-body-secondary rounded-4 shadow p-4 h-100" id="stack-mlflow">
+        <div class="d-flex gap-3 align-items-center mb-3">
+          <i class="bi bi-box-seam fs-1 text-purple"></i>
+          <h3 class="mb-0">MLflow</h3>
+        </div>
+        <div class="text-secondary mb-3">MLOps | experiment tracking | registry</div>
+        <p><strong>O que é:</strong> Plataforma para gerenciar o ciclo de vida de modelos de ML.</p>
+        <p><strong>Como uso:</strong> Versionamento de experimentos, registro de métricas e deploy controlado de modelos.</p>
+      </div>
+
+      <!-- GitHub -->
+      <div class="tab-pane fade bg-body-secondary rounded-4 shadow p-4 h-100" id="stack-github">
+        <div class="d-flex gap-3 align-items-center mb-3">
+          <i class="bi bi-github fs-1 text-dark"></i>
+          <h3 class="mb-0">GitHub</h3>
+        </div>
+        <div class="text-secondary mb-3">versionamento | CI/CD | colaboração</div>
+        <p><strong>O que é:</strong> Plataforma de hospedagem de código com Git e ferramentas de automação.</p>
+        <p><strong>Como uso:</strong> Repositórios de projetos, GitHub Actions para testes e deploy, e portfólio público.</p>
+      </div>
+
+      <!-- Docker -->
+      <div class="tab-pane fade bg-body-secondary rounded-4 shadow p-4 h-100" id="stack-docker">
+        <div class="d-flex gap-3 align-items-center mb-3">
+          <i class="bi bi-boxes fs-1 text-info"></i>
+          <h3 class="mb-0">Docker</h3>
+        </div>
+        <div class="text-secondary mb-3">container | ambiente isolado | portabilidade</div>
+        <p><strong>O que é:</strong> Plataforma de containerização que garante consistência entre ambientes.</p>
+        <p><strong>Como uso:</strong> Empacotar aplicações web e pipelines de dados para deploy em qualquer servidor.</p>
+      </div>
+
+      <!-- HuggingFace -->
+      <div class="tab-pane fade bg-body-secondary rounded-4 shadow p-4 h-100" id="stack-hf">
+        <div class="d-flex gap-3 align-items-center mb-3">
+          <i class="bi bi-chat-dots-fill fs-1 text-warning"></i>
+          <h3 class="mb-0">HuggingFace</h3>
+        </div>
+        <div class="text-secondary mb-3">NLP | transformers | modelos pré-treinados</div>
+        <p><strong>O que é:</strong> Ecossistema de modelos de NLP e visão, com biblioteca transformers.</p>
+        <p><strong>Como uso:</strong> Análise de sentimentos de feedbacks agrícolas e sumarização de relatórios técnicos.</p>
+      </div>
+
+      <!-- AWS -->
+      <div class="tab-pane fade bg-body-secondary rounded-4 shadow p-4 h-100" id="stack-aws">
+        <div class="d-flex gap-3 align-items-center mb-3">
+          <i class="bi bi-cloud-arrow-up-fill fs-1 text-warning"></i>
+          <h3 class="mb-0">AWS</h3>
+        </div>
+        <div class="text-secondary mb-3">cloud | S3 | EC2 | RDS</div>
+        <p><strong>O que é:</strong> Provedora de serviços de nuvem (computação, armazenamento, banco de dados).</p>
+        <p><strong>Como uso:</strong> Armazenar datasets no S3, rodar ETL em EC2 e hospedar bancos PostgreSQL no RDS.</p>
+      </div>
+    </div>
+  </div>
 </section>
+
 </main>
 {% endblock %}
